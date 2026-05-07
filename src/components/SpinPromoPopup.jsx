@@ -82,9 +82,15 @@ export const SpinPromoPopup = () => {
   const [boxOpen, setBoxOpen] = useState(false);
   const [burst, setBurst] = useState(false);
 
-  // Show popup on every mount (every page load to Dashboard)
+  // Show popup once per calendar day
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 800);
+    const today = new Date().toDateString();
+    const lastShown = localStorage.getItem('spinPromoLastShown');
+    if (lastShown === today) return; // already shown today
+    const timer = setTimeout(() => {
+      setShow(true);
+      localStorage.setItem('spinPromoLastShown', today);
+    }, 800);
     return () => clearTimeout(timer);
   }, []);
 
@@ -198,7 +204,7 @@ export const SpinPromoPopup = () => {
                     transition={{ repeat: Infinity, duration: 1.5 }}
                     style={{ color: 'var(--warning)', fontWeight: 700, fontSize: '13px', marginTop: '10px' }}
                   >
-                    Tap to open! 🎁
+                    Get Reward 🎁
                   </motion.p>
                 </motion.div>
               ) : (
