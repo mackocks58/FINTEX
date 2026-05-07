@@ -212,11 +212,16 @@ Every registered FINTEX user is automatically assigned a unique, alphanumeric Re
 
 When a new user clicks your link or manually enters your Referral Code during registration, they are permanently cryptographically bound to your affiliate network as a 'Direct Referral' (Level 1).
 
-The Monumental 30% First Deposit Bonus:
-Our headline reward is the Direct Deposit Bonus. When your direct referral successfully completes their very first account recharge (deposit) and it is verified by the system, you are instantaneously credited with a massive 30% commission based on their deposit amount. 
-For example: If your referral deposits $1,000 to activate a VIP bot, you immediately receive $300 directly into your withdrawable Profit Wallet. There are absolutely no caps, limits, or restrictions on how many people you can invite or how much commission you can earn. 
+The 3-Tier Commission Structure:
+FINTEX operates a deep, multi-level commission system that rewards not just your direct recruits, but the entire network you build beneath you. Here is exactly how it works:
 
-This bonus is fully automated via smart contracts. The exact second your referral's deposit transitions to 'SUCCESS', your balance updates, and a transaction receipt labeled 'Affiliate Reward' is generated in your history.`
+• Level 1 – Direct Referral (10%): When someone you personally invite makes a deposit and it is approved, you instantly receive 10% of that deposit credited to your balance. Example: Your friend deposits $500 → You earn $50 immediately.
+
+• Level 2 – Network Extension (3%): When someone invited by your direct referral makes a deposit, you earn 3% of their deposit too. Example: Your friend invites their colleague who deposits $1,000 → You earn $30.
+
+• Level 3 – Deep Network (1%): The earnings go even deeper. When a Level 2 recruit invites someone who deposits, you earn 1% of that deposit as well. Example: Level 2's contact deposits $2,000 → You earn $20.
+
+All commissions are fully automated. The exact second a deposit is approved by the admin, every eligible referrer in the chain receives their commission simultaneously. A transaction receipt labeled 'Affiliate Reward' with the tier level is generated in each referrer's history for full transparency.`
       },
       {
         question: "What are the best strategies for growing my FINTEX affiliate network?",

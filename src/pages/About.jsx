@@ -142,7 +142,45 @@ export const About = () => {
           </div>
         </section>
 
-        {/* Section 6: Gamified Rewards & Bonuses */}
+        {/* Section 6: 3-Tier Affiliate Commission */}
+        <section style={{ background: 'var(--bg-panel)', padding: '20px', borderRadius: '16px', border: '1px solid var(--border)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+            <Users size={18} color="var(--warning)" />
+            <h3 style={{ margin: 0, fontSize: '16px' }}>3-Tier Affiliate Commission System</h3>
+          </div>
+          <div style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.8 }}>
+            <p>
+              FINTEX operates one of the most powerful multi-level referral commission systems in the decentralized finance space. You do not just earn from the people you invite — you earn from the people <strong style={{ color: '#fff' }}>they</strong> invite too, up to 3 levels deep.
+            </p>
+
+            {/* Referral chain image */}
+            <div style={{ margin: '16px 0', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(212,175,55,0.3)', boxShadow: '0 4px 20px rgba(0,0,0,0.4)' }}>
+              <img src="/images/referral_chain.png" alt="3-Tier Referral Commission Chain" style={{ width: '100%', display: 'block' }} />
+            </div>
+
+            <p><strong>The 3 Tiers Explained:</strong></p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', margin: '12px 0' }}>
+              {[
+                { level: 'Level 1 – Direct Referral', pct: '10%', color: '#d4af37', example: 'Your friend deposits $500 → You earn $50 instantly.' },
+                { level: 'Level 2 – Friend\'s Network', pct: '3%', color: 'var(--primary)', example: 'Your friend\'s contact deposits $1,000 → You earn $30.' },
+                { level: 'Level 3 – Extended Network', pct: '1%', color: '#a855f7', example: 'Level 2 recruit\'s contact deposits $2,000 → You earn $20.' },
+              ].map((t, i) => (
+                <div key={i} style={{ background: 'var(--bg-dark)', borderRadius: '10px', padding: '12px 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px', border: `1px solid ${t.color}30` }}>
+                  <div>
+                    <p style={{ margin: '0 0 4px 0', fontWeight: 700, color: '#fff', fontSize: '13px' }}>{t.level}</p>
+                    <p style={{ margin: 0, fontSize: '12px', color: 'var(--text-muted)' }}>{t.example}</p>
+                  </div>
+                  <span style={{ fontSize: '22px', fontWeight: 900, color: t.color, flexShrink: 0 }}>{t.pct}</span>
+                </div>
+              ))}
+            </div>
+            <p>
+              All commissions are processed automatically the moment a deposit is approved. There are no caps, no limits, and no delays. Build your network and watch your passive income multiply across all 3 levels.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 7: Gamified Rewards & Bonuses */}
         <section style={{ background: 'var(--bg-panel)', padding: '20px', borderRadius: '16px', border: '1px solid var(--border)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
             <Zap size={18} color="var(--warning)" />
