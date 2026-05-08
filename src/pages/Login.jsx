@@ -20,7 +20,7 @@ const COUNTRIES = [
   { code: 'UN', name: 'Global/Other' }
 ];
 
-const CustomCountrySelect = ({ value, onChange }) => {
+const CustomCountrySelect = ({ value, onChange, t }) => {
   const [isOpen, setIsOpen] = useState(false);
   const selected = COUNTRIES.find(c => c.name === value);
 
@@ -341,7 +341,7 @@ export const Login = () => {
           {!isLogin && (
             <div className="input-group">
               <label className="input-label">{t('country')}</label>
-              <CustomCountrySelect value={country} onChange={setCountry} />
+              <CustomCountrySelect value={country} onChange={setCountry} t={t} />
             </div>
           )}
           
